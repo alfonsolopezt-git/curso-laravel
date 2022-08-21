@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bienvenido</title>
+    <title>Custom</title>
 </head>
 <body>
-    <h1>Bienvenido</h1>
-    <a href="/contacto">Contacto</a>
-    <a href=" {{ route('contacto')}} ">Contacto ruta con nombre</a>
+    <h1>{{ $msj }} la edad del usuario es: {{ $edad }}</h1>
 </body>
 </html>

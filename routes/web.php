@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/escribeme', function () {
+    echo 'contactame';
+})->name('contacto');
+
+Route::get('/custom',function(){
+    $msj = 'Mensaje desde el servidor *-*';
+    $data = ['msj' => $msj, 'edad' => 15];
+    return view('custom',$data);
+});
